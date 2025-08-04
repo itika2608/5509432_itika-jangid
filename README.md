@@ -4,4 +4,5 @@
 
 ## C Programming Certificate
 
-![C Certificate](https://raw.githubusercontent.com/itika2608/5509432_itika-jangid/main/images/basic-to-c.png)
+![Basic to C Certificate](https://raw.githubusercontent.com/itika2608/5509432_itika-jangid/main/certificate%20of%20c/basic_to_c.png)
+
