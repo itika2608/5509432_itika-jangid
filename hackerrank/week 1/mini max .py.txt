@@ -1,0 +1,14 @@
+def miniMaxSum(numbers):
+    total = sum(numbers)
+    smallest = min(numbers)
+    largest = max(numbers)
+
+    min_sum = total - largest
+    max_sum = total - smallest
+
+    print(min_sum, max_sum)
+
+
+if __name__ == "__main__":
+    nums = list(map(int, input().split()))
+    miniMaxSum(nums)
