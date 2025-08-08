@@ -1,0 +1,12 @@
+def lonelyinteger(arr):
+    result = 0
+    for num in arr:
+        result ^= num  
+    return result
+if __name__ == "__main__":
+    import sys
+    data = sys.stdin.read().strip().split()
+    
+    numbers = list(map(int, data[1:]))
+    result = lonelyinteger(numbers)
+    print(result)

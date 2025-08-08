@@ -1,0 +1,19 @@
+text = input()
+
+text = text.lower()
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+count = 0
+
+
+for letter in alphabet:
+    
+    if letter in text:
+        count = count + 1
+
+
+if count == 26:
+    print("pangram")
+else:
+    print("not pangram")

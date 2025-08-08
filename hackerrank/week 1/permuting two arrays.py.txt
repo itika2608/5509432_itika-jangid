@@ -1,0 +1,30 @@
+times = int(input())
+for x in range(times):
+    temp = input().split()
+    n = int(temp[0])
+    k = int(temp[1])
+
+    first = input().split()
+    for i in range(n):
+        first[i] = int(first[i])
+
+    second = input().split()
+    for i in range(n):
+        second[i] = int(second[i])
+
+    first.sort()
+
+    second.sort()
+    second.reverse()
+
+    good = True
+
+    for i in range(n):
+        if first[i] + second[i] < k:
+            good = False
+            break
+
+    if good:
+        print("YES")
+    else:
+        print("NO")

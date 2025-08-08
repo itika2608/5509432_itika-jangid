@@ -1,0 +1,21 @@
+total = int(input())
+
+choco = input().split()
+for i in range(len(choco)):
+    choco[i] = int(choco[i])
+
+day, month = input().split()
+day = int(day)
+month = int(month)
+
+ways = 0
+
+for i in range(total - month + 1):
+    temp_sum = 0
+    for j in range(i, i + month):
+        temp_sum = temp_sum + choco[j]
+    
+    if temp_sum == day:
+        ways = ways + 1
+
+print(ways)
