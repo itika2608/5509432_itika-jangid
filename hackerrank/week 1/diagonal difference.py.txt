@@ -1,0 +1,27 @@
+size = int(input())
+
+matrix = []
+
+for i in range(size):
+    
+    line = input().split()
+
+    for j in range(len(line)):
+        line[j] = int(line[j])
+
+    matrix.append(line)
+
+first_diagonal = 0
+second_diagonal = 0
+
+for i in range(size):
+    first_diagonal = first_diagonal + matrix[i][i]
+
+    second_diagonal = second_diagonal + matrix[i][size - 1 - i]
+
+difference = first_diagonal - second_diagonal
+
+if difference < 0:
+    difference = difference * -1
+
+print(difference)
